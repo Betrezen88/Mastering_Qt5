@@ -26,11 +26,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         MainWindow.cpp \
-    SysInfo.cpp
+    SysInfo.cpp \
+    SysInfoLinuxImpl.cpp
 
 HEADERS += \
         MainWindow.h \
-    SysInfo.h
+    SysInfo.h \
+    SysInfoLinuxImpl.h
 
 windows {
     SOURCES += SysInfoWindowsImpl.cpp
