@@ -3,6 +3,8 @@
 
 #include "SysInfo.h"
 
+#include <QtGlobal>
+
 class SysInfoWindowsImpl : public SysInfo
 {
 public:
