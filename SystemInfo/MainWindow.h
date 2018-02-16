@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include "CpuWidget.h"
+
 namespace Ui {
 class MainWindow;
 }
@@ -17,6 +19,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    CpuWidget m_cpuWidget;
 };
 
 #endif // MAINWINDOW_H

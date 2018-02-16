@@ -1,4 +1,5 @@
 #include "CpuWidget.h"
+#include "SysInfo.h"
 
 using namespace QtCharts;
 
@@ -16,5 +17,8 @@ CpuWidget::CpuWidget(QWidget *parent)
 
 void CpuWidget::updateSeries()
 {
-
+    double cpuLoadAverage = SysInfo::instance().cpuLoadAverage();
+    m_series->clear();
+    m_series->append("Load", cpuLoadAverage);
+    m_series->append("Free", 100.0 - cpuLoadAverage);
 }
