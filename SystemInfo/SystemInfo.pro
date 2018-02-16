@@ -27,12 +27,14 @@ SOURCES += \
         main.cpp \
         MainWindow.cpp \
     SysInfo.cpp \
-    SysInfoWidget.cpp
+    SysInfoWidget.cpp \
+    CpuWidget.cpp
 
 HEADERS += \
         MainWindow.h \
     SysInfo.h \
-    SysInfoWidget.h
+    SysInfoWidget.h \
+    CpuWidget.h
 
 windows {
     SOURCES += SysInfoWindowsImpl.cpp
