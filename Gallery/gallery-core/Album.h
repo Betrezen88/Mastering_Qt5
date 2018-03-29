@@ -7,7 +7,7 @@ class GALLERYCORESHARED_EXPORT Album
 {
 
 public:
-    Album();
+    explicit Album(const QString& name = "");
 };
 
 #endif // ALBUM_H
