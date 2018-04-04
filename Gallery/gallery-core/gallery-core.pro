@@ -25,11 +25,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        Album.cpp
+        Album.cpp \
+    Picture.cpp
 
 HEADERS += \
         Album.h \
-        gallery-core_global.h 
+        gallery-core_global.h \ 
+    Picture.h
 
 unix {
     target.path = /usr/lib
