@@ -27,13 +27,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         Album.cpp \
     Picture.cpp \
-    DatabaseManager.cpp
+    DatabaseManager.cpp \
+    AlbumDao.cpp
 
 HEADERS += \
         Album.h \
         gallery-core_global.h \ 
     Picture.h \
-    DatabaseManager.h
+    DatabaseManager.h \
+    AlbumDao.h
 
 unix {
     target.path = /usr/lib
