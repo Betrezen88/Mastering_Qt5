@@ -1,7 +1,8 @@
 #ifndef PICTUREDAO_H
 #define PICTUREDAO_H
 
-#include <QVector>
+#include <vector>
+#include <memory>
 
 class QSqlDatabase;
 class Picture;
@@ -15,7 +16,7 @@ public:
     void addPictureInAlbum(int albumId, Picture& picture) const;
     void removePicture(int id) const;
     void removePictureForAlbum(int albumId) const;
-    QVector<Picture*> picturesForAlbum(int albumId) const;
+    std::unique_ptr<std::vector<std::unique_ptr<Picture>>> picturesForAlbum(int albumId) const;
 
 private:
     QSqlDatabase& m_database;
