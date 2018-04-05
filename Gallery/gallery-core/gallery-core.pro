@@ -28,14 +28,16 @@ SOURCES += \
         Album.cpp \
     Picture.cpp \
     DatabaseManager.cpp \
-    AlbumDao.cpp
+    AlbumDao.cpp \
+    PictureDao.cpp
 
 HEADERS += \
         Album.h \
         gallery-core_global.h \ 
     Picture.h \
     DatabaseManager.h \
-    AlbumDao.h
+    AlbumDao.h \
+    PictureDao.h
 
 unix {
     target.path = /usr/lib
