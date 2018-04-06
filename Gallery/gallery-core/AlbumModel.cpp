@@ -36,11 +36,14 @@ QVariant AlbumModel::data(const QModelIndex &index, int role) const
     {
         case Roles::IdRole:
             return album.id();
+            break;
         case Roles::NameRole:
         case Qt::DisplayRole:
             return album.name();
+            break;
         default:
             return QVariant();
+            break;
     }
 }
 
@@ -68,7 +71,7 @@ bool AlbumModel::removeRows(int row, int count, const QModelIndex &parent)
         const Album& album = *m_albums->at(row + countLeft);
         m_db.albumDao().removeAlbum( album.id() );
     }
-    m_albums->erase( m_albums->begin() + row, m_albums->begin() + row +count  );
+    m_albums->erase( m_albums->begin() + row, m_albums->begin() + row + count  );
     endRemoveRows();
     return true;
 }
