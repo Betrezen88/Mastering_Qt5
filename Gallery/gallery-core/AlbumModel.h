@@ -20,7 +20,7 @@ public:
         NameRole
     };
 
-    AlbumModel(QObject* parent = 0);
+    AlbumModel(QObject* parent = nullptr);
 
     QModelIndex addAlbum(const Album& album);
 

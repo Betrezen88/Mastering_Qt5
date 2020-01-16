@@ -21,7 +21,7 @@ public:
         FilePathRole = Qt::UserRole + 1
     };
 
-    PictureModel(const AlbumModel& albumModel, QObject* parent = 0);
+    PictureModel(const AlbumModel& albumModel, QObject* parent = nullptr);
 
     QModelIndex addPicture(const Picture& picture);
 
